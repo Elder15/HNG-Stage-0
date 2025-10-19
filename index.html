@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Bolaji HNG13 Profile Card</title>
+	</head>
+	<body>
+		<article class="profile" data-testid="test-profile-card">
+			<div class="profile__card--1st-segment">
+				<div class="profile__card">
+					<div class="profile__name">
+						<header data-testid="test-user-name">Bolaji Habeeb</header>
+						<h5>Web developer || Nursing Professional</h5>
+					</div>
+					<img
+						src="./Bolaji Habeeb.png"
+						alt="Profile picture"
+						class="profile__image"
+						data-testid="test-user-avatar"
+					/>
+				</div>
+				<div class="profile__card">
+					<p data-testid="test-user-name">
+						A young health professional with intersest on how AI can be used to augment
+						Primary Health Care servivce delivery.
+					</p>
+				</div>
+			</div>
+			<div class="profile__card profile__card--section">
+				<section data-testid="test-user-hobbies">
+					<h3>Hobbies</h3>
+					<ul>
+						<li>Gaming</li>
+						<li>Research</li>
+						<li>Playing Football</li>
+					</ul>
+				</section>
+				<section data-testid="test-user-dislikes">
+					<h3>Dislikes</h3>
+					<ul>
+						<li>Driving</li>
+						<li>Gymning</li>
+					</ul>
+				</section>
+			</div>
+			<div class="profile__card profile__card--link">
+				<nav>
+					<a
+						data-testid="test-user-social-linkedin"
+						target="_blank"
+						href="https://www.linkedin.com/in/habeeb-bolaji/"
+						>LinkedIn</a
+					>
+					<a
+						data-testid="test-user-social-twitter"
+						target="_blank"
+						href="https://x.com/bolajiolamideh"
+						>Twitter</a
+					>
+				</nav>
+				<div>
+					<p class="clock">
+						Current Time:
+						<span data-testid="test-user-name" id="clock"></span>
+					</p>
+				</div>
+			</div>
+		</article>
+		<script>
+			function updateTime() {
+				const now = new Date();
+				const hours = now.getHours().toString().padStart(2, '0');
+				const minutes = now.getMinutes().toString().padStart(2, '0');
+				const seconds = now.getSeconds().toString().padStart(2, '0');
+
+				const timeString = `${hours}:${minutes}:${seconds}`;
+				document.getElementById('clock').textContent = timeString;
+			}
+
+			// Update immediately
+			updateTime();
+
+			// Update every second
+			setInterval(updateTime, 1000);
+		</script>
+	</body>
+</html>

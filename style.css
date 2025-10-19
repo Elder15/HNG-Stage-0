@@ -1,0 +1,80 @@
+/* Block: profile */
+.profile {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: aquamarine;
+	padding: 1rem;
+	width: 40vw;
+	max-width: 800px;
+	margin: 0 auto;
+	border-radius: 1rem;
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Element: profile__card */
+.profile__card {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	padding: 1rem;
+	width: 100%;
+	max-width: 400px;
+}
+
+.profile__card--1st-segment {
+	background-color: rgb(6, 88, 26);
+	border-radius: 0.5rem;
+	border: 50%;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	margin-top: 1.25rem;
+}
+.profile__card--section {
+	background-color: #fff;
+	padding: 1.5rem;
+	border-radius: 1rem;
+	margin: 1.5rem auto;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Each section inside the card */
+.profile__card--section section {
+	padding: 1rem;
+	color: rgb(6, 88, 26);
+	border-radius: 0.5rem;
+	width: 100%;
+}
+
+.profile__card--section ul {
+	margin-left: 1.5rem;
+	line-height: 1.6;
+}
+
+.profile__image {
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	object-fit: cover;
+	border: 3px solid rgb(146, 218, 176);
+	align-self: flex-end;
+}
+
+/* Element: profile__name */
+.profile__name {
+	font-weight: 600;
+	color: #333;
+}
+.profile__card profile__card--link {
+	color: aquamarine;
+}
+.profile__card--link a {
+	text-decoration: none;
+	color: rgb(6, 88, 26);
+	font-weight: bolder;
+}
+.profile__card--link a:hover {
+	color: rgb(2, 150, 50);
+}
+.clock {
+	font-weight: bolder;
+}
