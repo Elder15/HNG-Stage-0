@@ -78,3 +78,70 @@
 .clock {
 	font-weight: bolder;
 }
+.form-group {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 1rem;
+	width: 100%;
+	max-width: 400px;
+}
+
+input,
+textarea {
+	padding: 0.5rem;
+	border: 1px solid #ccc;
+	border-radius: 0.4rem;
+	font-size: 1rem;
+}
+
+button {
+	background-color: rgb(6, 88, 26);
+	color: #fff;
+	border: none;
+	padding: 0.6rem 1rem;
+	border-radius: 0.4rem;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: rgb(2, 150, 50);
+}
+
+.error {
+	color: red;
+	font-size: 0.9rem;
+}
+
+.success {
+	color: green;
+	font-weight: bold;
+}
+
+.hidden {
+	display: none;
+}
+
+main.profile section {
+	background-color: #fff;
+	border-radius: 0.8rem;
+	padding: 1.2rem;
+	margin: 1rem 0;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	color: rgb(6, 88, 26);
+}
+
+main.profile h1 {
+	text-align: center;
+	margin-bottom: 1.5rem;
+}
+
+@media (max-width: 768px) {
+	.profile {
+		width: 90vw;
+		padding: 1rem;
+	}
+	section {
+		font-size: 0.95rem;
+	}
+}
+
