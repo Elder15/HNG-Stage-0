@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Bolaji HNG13 Profile Card</title>
+	</head>
+	<body>
+		<header class="profile__card--link">
+			<nav>
+				<a href="index.html">Home</a>
+				<a href="about.html">About Me</a>
+				<a href="contact.html">Contact Us</a>
+			</nav>
+		</header>
+
+		<main class="profile" data-testid="test-contact-page">
+			<h2>Contact Us</h2>
+			<form id="contactForm" novalidate>
+				<div class="form-group">
+					<label for="name">Full Name</label>
+					<input
+						type="text"
+						id="name"
+						data-testid="test-contact-name"
+						aria-describedby="error-name"
+						required
+					/>
+					<span
+						id="error-name"
+						data-testid="test-contact-error-name"
+						class="error"
+					></span>
+				</div>
+
+				<div class="form-group">
+					<label for="email">Email</label>
+					<input
+						type="email"
+						id="email"
+						data-testid="test-contact-email"
+						aria-describedby="error-email"
+						required
+					/>
+					<span
+						id="error-email"
+						data-testid="test-contact-error-email"
+						class="error"
+					></span>
+				</div>
+
+				<div class="form-group">
+					<label for="subject">Subject</label>
+					<input
+						type="text"
+						id="subject"
+						data-testid="test-contact-subject"
+						aria-describedby="error-subject"
+						required
+					/>
+					<span
+						id="error-subject"
+						data-testid="test-contact-error-subject"
+						class="error"
+					></span>
+				</div>
+
+				<div class="form-group">
+					<label for="message">Message</label>
+					<textarea
+						id="message"
+						data-testid="test-contact-message"
+						aria-describedby="error-message"
+						minlength="10"
+						required
+					></textarea>
+					<span
+						id="error-message"
+						data-testid="test-contact-error-message"
+						class="error"
+					></span>
+				</div>
+
+				<button type="submit" data-testid="test-contact-submit">Submit</button>
+				<p id="success" data-testid="test-contact-success" class="success hidden">
+					✅ Message sent successfully!
+				</p>
+			</form>
+		</main>
+	</body>
+</html>
